@@ -140,7 +140,7 @@ export const AddAuction = ({ setAuction }) => {
             </Row> */}
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" type="submit" className="w-100">
+          <Button variant="dark" type="submit" className="w-100">
             Pedir Orden
           </Button>
         </Modal.Footer>
