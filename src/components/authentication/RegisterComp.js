@@ -34,7 +34,7 @@ export const RegisterComp = () => {
   };
 
   return (
-    <>
+    < div className=" mt-2 text-center">
       <div onClick={openForm} className="btn btn-outline-secondary mx-2">
         Registro
       </div>  
@@ -74,6 +74,6 @@ export const RegisterComp = () => {
           </Modal.Footer>
         </form>
       </Modal>
-    </>
+    </div>
   );
 };
