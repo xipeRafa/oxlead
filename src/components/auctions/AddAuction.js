@@ -9,7 +9,8 @@ export const AddAuction = ({ setAuction }) => {
   const itemTitle1 = useRef();
   const itemTitle2 = useRef();
   const itemTitle3 = useRef();
-
+  const origenRef = useRef();
+  const distritoRef = useRef();
   const itemDesc = useRef();
   /* const itemImage = useRef(); */
   const myFormRef = useRef();
@@ -34,6 +35,8 @@ export const AddAuction = ({ setAuction }) => {
       email: currentUser.email,
       tienda: itemTitle.current.value,
       hora: itemTitle1.current.value,
+      distrito: distritoRef.current.value,
+      origen:origenRef.current.value,
       destino: itemTitle2.current.value,
       pasajeros: itemTitle3.current.value,
       description: itemDesc.current.value,
@@ -61,7 +64,7 @@ export const AddAuction = ({ setAuction }) => {
         {/*   {error && <Alert variant="danger">{error}</Alert>} */}
           <Row>
             <Col>
-              <Form.Group className="mb-4">
+              <Form.Group className="mb-3">
                 <Form.Control
                   type="text"
                   required
@@ -83,31 +86,35 @@ export const AddAuction = ({ setAuction }) => {
               </Form.Group>
             </Col>
           </Row>
-          {/* <Row>
-            <Col>
-              <Form.Label>Categoria</Form.Label>
-              <Form.Control
-                as="select"
-                multiple={false}
-                ref={itemCategorie}
-                className="mb-3"
-              >
-                <option disabled>Selecciona una Opcion        </option>
-                <option value="mantenimiento"> Mantenimiento  </option> 
-                <option value="reparacion">    Reparacion     </option> 
-                <option value="choque">        Choque         </option> 
-                <option value="llantas">       LLantas        </option> 
-              </Form.Control>
-            </Col>
-          </Row> */}
           <Row>
             <Col>
               <Form.Group className="mb-3">
-                <Form.Label>Destino</Form.Label>
-                <Form.Control type="text" required ref={itemTitle2} />
+                <Form.Control type="text" required ref={origenRef} placeholder="Origen"/>
               </Form.Group>
             </Col>
           </Row>
+          <Row>
+            <Col>
+              <Form.Group className="mb-3">
+                <Form.Control type="text" required ref={itemTitle2} placeholder="Destino"/>
+              </Form.Group>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Form.Label>Distrito</Form.Label>
+              <Form.Control
+                as="Select"
+                multiple={false}
+                ref={distritoRef}
+                className="mb-3"
+              >
+                <option disabled>Selecciona una Opcion</option>
+                <option value="uno">1 Uno</option> 
+                <option value="dos">2 Dos</option> 
+              </Form.Control>
+            </Col>
+          </Row> 
           <Row>
             <Col>
               <Form.Group className="mb-3">
