@@ -71,7 +71,7 @@ export const AddAuction = ({ setAuction }) => {
                 ref={itemTitle}
                 className="mb-3"
               >
-                <option disabled>Tiendas Distrito 1</option>
+                <option>Selecciona Una Tienda de Distrito 1</option>
                 <option value="Altares II-50AUF">Altares II-50AUF</option> 
                 <option value="Apolo-50OAP">Apolo-50OAP</option> 
                 <option value="Bachoco-50BCC">Bachoco-50BCC</option> 
