@@ -17,7 +17,6 @@ import { AddAuction } from './AddAuction';
 
 export const AuctionBody = () => {
   const [auction, setAuction] = useState(null);
-  console.log(auction)
 
   const { currentUser, globalMsg } = useContext(AuthContext);
   const { DB } = useContext(FilterContext);
