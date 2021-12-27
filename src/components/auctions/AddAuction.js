@@ -460,6 +460,7 @@ const handleTienda1 = (e) =>{
             <Col>
               <Form.Group className="mb-3">
                 <Form.Control
+                  step="any"
                   type="number"
                   required
                   ref={precio}
