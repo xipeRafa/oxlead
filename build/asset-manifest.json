@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/oxlead/static/js/main.e00323cc.chunk.js",
-    "main.js.map": "/oxlead/static/js/main.e00323cc.chunk.js.map",
+    "main.js": "/oxlead/static/js/main.c0321730.chunk.js",
+    "main.js.map": "/oxlead/static/js/main.c0321730.chunk.js.map",
     "runtime-main.js": "/oxlead/static/js/runtime-main.10dcba6f.js",
     "runtime-main.js.map": "/oxlead/static/js/runtime-main.10dcba6f.js.map",
     "static/css/2.54370922.chunk.css": "/oxlead/static/css/2.54370922.chunk.css",
-    "static/js/2.363598a9.chunk.js": "/oxlead/static/js/2.363598a9.chunk.js",
-    "static/js/2.363598a9.chunk.js.map": "/oxlead/static/js/2.363598a9.chunk.js.map",
+    "static/js/2.1bb5ec71.chunk.js": "/oxlead/static/js/2.1bb5ec71.chunk.js",
+    "static/js/2.1bb5ec71.chunk.js.map": "/oxlead/static/js/2.1bb5ec71.chunk.js.map",
     "index.html": "/oxlead/index.html",
     "static/css/2.54370922.chunk.css.map": "/oxlead/static/css/2.54370922.chunk.css.map",
-    "static/js/2.363598a9.chunk.js.LICENSE.txt": "/oxlead/static/js/2.363598a9.chunk.js.LICENSE.txt",
+    "static/js/2.1bb5ec71.chunk.js.LICENSE.txt": "/oxlead/static/js/2.1bb5ec71.chunk.js.LICENSE.txt",
     "static/media/canal10.24a72002.png": "/oxlead/static/media/canal10.24a72002.png"
   },
   "entrypoints": [
     "static/js/runtime-main.10dcba6f.js",
     "static/css/2.54370922.chunk.css",
-    "static/js/2.363598a9.chunk.js",
-    "static/js/main.e00323cc.chunk.js"
+    "static/js/2.1bb5ec71.chunk.js",
+    "static/js/main.c0321730.chunk.js"
   ]
 }
