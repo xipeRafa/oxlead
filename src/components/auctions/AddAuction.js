@@ -11,7 +11,6 @@ export const AddAuction = ({ setAuction }) => {
   const itemTitle3 = useRef();
   const origenRef = useRef();
   const itemDesc = useRef();
-  const precio = useRef()
   const asesor = useRef()
   /* const itemImage = useRef(); */
   const myFormRef = useRef();
@@ -53,7 +52,6 @@ const handleTienda1 = (e) =>{
       hora: itemTitle1.current.value,
       origen:origenRef.current.value,
       destino: itemTitle2.current.value,
-      precio: Number(precio.current.value),
       pasajeros: itemTitle3.current.value,
       description: itemDesc.current.value,
       duration: dueDate,
@@ -444,7 +442,7 @@ const handleTienda1 = (e) =>{
               </Form.Group>
             </Col>
         </Row>
-
+        
           <Row>
             <Col>
               <Form.Group className="mb-3">
@@ -469,19 +467,6 @@ const handleTienda1 = (e) =>{
             <Col>
               <Form.Group className="mb-3">
                 <Form.Control type="text" required ref={itemTitle2} placeholder="Destino"/>
-              </Form.Group>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <Form.Group className="mb-3">
-                <Form.Control
-                  step="any"
-                  type="number"
-                  required
-                  ref={precio}
-                  placeholder="Precio"
-                />
               </Form.Group>
             </Col>
           </Row>
