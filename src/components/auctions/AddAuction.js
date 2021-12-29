@@ -12,6 +12,7 @@ export const AddAuction = ({ setAuction }) => {
   const origenRef = useRef();
   const itemDesc = useRef();
   const precio = useRef()
+  const asesor = useRef()
   /* const itemImage = useRef(); */
   const myFormRef = useRef();
   
@@ -47,6 +48,7 @@ const handleTienda1 = (e) =>{
 
     let newAuction = {
       email: currentUser.email,
+      asesor: asesor.current.value,
       tienda: tienda1,
       hora: itemTitle1.current.value,
       origen:origenRef.current.value,
@@ -76,6 +78,7 @@ const handleTienda1 = (e) =>{
       >
         <Modal.Body>
         {/*   {error && <Alert variant="danger">{error}</Alert>} */}
+
 
         <Row>
             <Col>
@@ -428,6 +431,19 @@ const handleTienda1 = (e) =>{
               </Form.Control>
             </Col>
           </Row> 
+
+          <Row>
+            <Col>
+              <Form.Group className="mb-3">
+                <Form.Control
+                  type="text"
+                  required
+                  ref={asesor}
+                  placeholder="Asesor"
+                />
+              </Form.Group>
+            </Col>
+        </Row>
 
           <Row>
             <Col>
