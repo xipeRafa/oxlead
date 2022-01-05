@@ -1,10 +1,8 @@
-import { Button, Form, Modal, Alert, Row, Col } from "react-bootstrap";
+import { Button, Form, Modal, Row, Col , Select} from "react-bootstrap";
 import React, { useContext, useRef, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
 
 export const AddAuction = ({ setAuction }) => {
-/*   const [error, setError] = useState(""); */
-
 
   const itemTitle1 = useRef();
   const itemTitle2 = useRef();
@@ -12,13 +10,11 @@ export const AddAuction = ({ setAuction }) => {
   const origenRef = useRef();
   const itemDesc = useRef();
   const asesor = useRef()
-  /* const itemImage = useRef(); */
   const myFormRef = useRef();
   
 
   const { currentUser } = useContext(AuthContext);
 
-/*   const imgTypes = ["image/png", "image/jpeg", "image/jpg"]; */
 
 const[dist, setDist]=useState('uno')
 
@@ -36,11 +32,6 @@ const handleTienda1 = (e) =>{
 
   const submitForm = async (e) => {
     e.preventDefault();
-  /*   setError(""); */
-
-  /*   if (!imgTypes.includes(itemImage.current.files[0].type)) {
-      return setError("Please use a valid image");
-    } */
 
     let currentDate = new Date();
     let dueDate = currentDate.setHours(currentDate.getHours());
@@ -54,12 +45,10 @@ const handleTienda1 = (e) =>{
       destino: itemTitle2.current.value,
       pasajeros: itemTitle3.current.value,
       description: itemDesc.current.value,
-      duration: dueDate,
-     /*  itemImage: itemImage.current.files[0], */
+      duration: dueDate
     };
 
     setAuction(newAuction);
-  /*   closeForm(); */
 
   myFormRef.current.reset()
 
@@ -75,8 +64,6 @@ const handleTienda1 = (e) =>{
         ref={myFormRef}
       >
         <Modal.Body>
-        {/*   {error && <Alert variant="danger">{error}</Alert>} */}
-
 
         <Row>
             <Col>
@@ -486,20 +473,6 @@ const handleTienda1 = (e) =>{
               </Form.Group>
             </Col>
           </Row>
-
-          {/*       <Row>
-              <Col>
-              <Form.Label></Form.Label>
-                <Form.Group >
-                  <Form.File
-                    label="Cargar Foto"
-                    custom
-                    required
-                    ref={itemImage}
-                  />
-                </Form.Group>
-              </Col>
-            </Row> */}
         </Modal.Body>
         <Modal.Footer>
           <Button variant="dark" type="submit" className="w-100">
