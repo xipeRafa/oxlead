@@ -10,11 +10,11 @@ export const NavComp = () => {
   return (
     <nav className="container navbar navbar-light ">
       <div className="container d-flex flex-column">
-        <div className="navbar-brand mb-4">
-          <img src={logoImg} alt="logo" height="50" />
+        <div className="navbar-brand mb-0">
+          <img src={logoImg} alt="logo" height="40" />
         </div>
         <div className="d-flex">
-          <div className="col mb-4">
+          <div className="col mb-0">
             {currentUser ? (
               <>
                 <div className="btn btn-secondary mx-2 disabled px-4">
